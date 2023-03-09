@@ -19,6 +19,7 @@ specifiers:
   eslint-plugin-react: ^7.32.2
   less: ^4.1.3
   prettier: ^2.8.4
+  rc-resize-observer: ^1.3.1
   react: ^18.2.0
   react-dom: ^18.2.0
   typescript: '*'
@@ -48,6 +49,7 @@ devDependencies:
   eslint-plugin-react: registry.npmmirror.com/eslint-plugin-react/7.32.2_eslint@8.35.0
   less: registry.npmmirror.com/less/4.1.3
   prettier: registry.npmmirror.com/prettier/2.8.4
+  rc-resize-observer: registry.npmmirror.com/rc-resize-observer/1.3.1_biqbaboplfbrettd7655fr4n2y
   typescript: registry.npmmirror.com/typescript/4.9.5
   vite: registry.npmmirror.com/vite/4.1.4_less@4.1.3
   vite-plugin-eslint: registry.npmmirror.com/vite-plugin-eslint/1.8.1_eslint@8.35.0+vite@4.1.4
@@ -2429,6 +2431,12 @@ packages:
       supports-color: registry.npmmirror.com/supports-color/7.2.0
     dev: true
 
+  registry.npmmirror.com/classnames/2.3.2:
+    resolution: {integrity: sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/classnames/-/classnames-2.3.2.tgz}
+    name: classnames
+    version: 2.3.2
+    dev: true
+
   registry.npmmirror.com/color-convert/1.9.3:
     resolution: {integrity: sha512-QfAUtd+vFdAtFQcC8CCyYt1fYWxSqAiK2cSD6zDB8N3cpsEBAvRxp9zOGg6G/SHHJYAT88/az/IuDGALsNVbGg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/color-convert/-/color-convert-1.9.3.tgz}
     name: color-convert
@@ -4183,6 +4191,38 @@ packages:
     version: 1.2.3
     dev: true
 
+  registry.npmmirror.com/rc-resize-observer/1.3.1_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-iFUdt3NNhflbY3mwySv5CA1TC06zdJ+pfo0oc27xpf4PIOvfZwZGtD9Kz41wGYqC4SLio93RVAirSSpYlV/uYg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/rc-resize-observer/-/rc-resize-observer-1.3.1.tgz}
+    id: registry.npmmirror.com/rc-resize-observer/1.3.1
+    name: rc-resize-observer
+    version: 1.3.1
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+    dependencies:
+      '@babel/runtime': registry.npmmirror.com/@babel/runtime/7.21.0
+      classnames: registry.npmmirror.com/classnames/2.3.2
+      rc-util: registry.npmmirror.com/rc-util/5.28.0_biqbaboplfbrettd7655fr4n2y
+      react: registry.npmmirror.com/react/18.2.0
+      react-dom: registry.npmmirror.com/react-dom/18.2.0_react@18.2.0
+      resize-observer-polyfill: registry.npmmirror.com/resize-observer-polyfill/1.5.1
+    dev: true
+
+  registry.npmmirror.com/rc-util/5.28.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-KYDjhGodswVj29v0TRciKTqRPgumIFvFDndbCD227pitQ+0Cei196rxk+OXb/blu6V8zdTRK5RjCJn+WmHLvBA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/rc-util/-/rc-util-5.28.0.tgz}
+    id: registry.npmmirror.com/rc-util/5.28.0
+    name: rc-util
+    version: 5.28.0
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+    dependencies:
+      '@babel/runtime': registry.npmmirror.com/@babel/runtime/7.21.0
+      react: registry.npmmirror.com/react/18.2.0
+      react-dom: registry.npmmirror.com/react-dom/18.2.0_react@18.2.0
+      react-is: registry.npmmirror.com/react-is/16.13.1
+    dev: true
+
   registry.npmmirror.com/react-dom/18.2.0_react@18.2.0:
     resolution: {integrity: sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-dom/-/react-dom-18.2.0.tgz}
     id: registry.npmmirror.com/react-dom/18.2.0
@@ -4194,7 +4234,6 @@ packages:
       loose-envify: registry.npmmirror.com/loose-envify/1.4.0
       react: registry.npmmirror.com/react/18.2.0
       scheduler: registry.npmmirror.com/scheduler/0.23.0
-    dev: false
 
   registry.npmmirror.com/react-is/16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-is/-/react-is-16.13.1.tgz}
@@ -4216,7 +4255,6 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       loose-envify: registry.npmmirror.com/loose-envify/1.4.0
-    dev: false
 
   registry.npmmirror.com/regenerate-unicode-properties/10.1.0:
     resolution: {integrity: sha512-d1VudCLoIGitcU/hEg2QqvyGZQmdC0Lf8BqdOMXGFSvJP4bNV1+XqbPQeHHLD51Jh4QJJ225dlIFvY4Ly6MXmQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/regenerate-unicode-properties/-/regenerate-unicode-properties-10.1.0.tgz}
@@ -4286,6 +4324,12 @@ packages:
     hasBin: true
     dependencies:
       jsesc: registry.npmmirror.com/jsesc/0.5.0
+    dev: true
+
+  registry.npmmirror.com/resize-observer-polyfill/1.5.1:
+    resolution: {integrity: sha512-LwZrotdHOo12nQuZlHEmtuXdqGoOD0OhaxopaNFxWzInpEgaLWoVuAMbTzixuosCx2nEG58ngzW3vxdWoxIgdg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/resize-observer-polyfill/-/resize-observer-polyfill-1.5.1.tgz}
+    name: resize-observer-polyfill
+    version: 1.5.1
     dev: true
 
   registry.npmmirror.com/resolve-from/4.0.0:
@@ -4391,7 +4435,6 @@ packages:
     version: 0.23.0
     dependencies:
       loose-envify: registry.npmmirror.com/loose-envify/1.4.0
-    dev: false
 
   registry.npmmirror.com/semver/5.7.1:
     resolution: {integrity: sha512-sauaDf/PZdVgrLTNYHRtpXa1iRiKcaebiKQ1BJdpQlWH2lCvexQdX55snPFyK7QzpudqbCI0qXFfOasHdyNDGQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/semver/-/semver-5.7.1.tgz}
