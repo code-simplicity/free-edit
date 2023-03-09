@@ -9,7 +9,7 @@ export type ToolBarProps<T = Record<string, any>> = {};
  * @constructor
  */
 const ToolBar: FC<ToolBarProps> = (props) => {
-  const {} = props;
+  const { children } = props;
   return (
     <div className={`tool-bar-container`}>
       <div>工具1</div>
